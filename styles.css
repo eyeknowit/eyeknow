@@ -1,0 +1,248 @@
+:root {
+  --text-color: #333; /* Default text color */
+  --bg-color: #fff; /* Default background color */
+}
+
+/* Dark Theme */
+.dark-theme {
+  --text-color: #fff;
+  --bg-color: #333;
+}
+body.dark-theme {
+  background-color: #1b1b1b;
+  color: white;
+}
+.toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 30px;
+}
+
+.toggle-slider:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-slider:before {
+  transform: translateX(30px);
+  background-color: black;
+}
+
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+main {
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-post {
+  margin-bottom: 40px;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ad {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ad img {
+  max-width: 100%;
+  height: auto;
+}
+
+aside {
+  width: 30%; /* Adjust the width as needed */
+  float: right;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: block;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.ads-and-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ads-and-links .ad {
+  margin-bottom: 20px;
+}
+
+.ads-and-links .ad img {
+  max-width: 100%;
+  height: auto;
+}
+
+.links h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .icons {
+      margin-top: 20px;
+  }
+
+  .sidebar {
+      width: 0;
+      display: none;
+  }
+
+  aside {
+      width: 100%;
+      float: none;
+      margin-top: 20px;
+  }
+
+  main {
+      width: 100%;
+      float: none;
+  }
+}
+.header .menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  /* ... (previous CSS code) ... */
+
+  .header .menu-toggle {
+      display: block;
+      font-size: 24px;
+      margin-right: 20px;
+  }
+
+  .sidebar-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+  }
+}
+
