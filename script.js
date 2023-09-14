@@ -1,42 +1,105 @@
-// Function to toggle the dark theme
-function toggleDarkTheme() {
-  const body = document.body;
-  body.classList.toggle('dark-theme');
+'use strict';
+
+/**
+ * element toggle function
+ */
+
+const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+
+
+/**
+ * header sticky & go to top
+ */
+
+const header = document.querySelector("[data-header]");
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener("scroll", function () {
+
+  if (window.scrollY >= 10) {
+    header.classList.add("active");
+    goTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    goTopBtn.classList.remove("active");
+  }
+
+});
+
+
+
+/**
+ * navbar toggle
+ */
+
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+const navbar = document.querySelector("[data-navbar]");
+
+navToggleBtn.addEventListener("click", function () {
+
+  elemToggleFunc(navToggleBtn);
+  elemToggleFunc(navbar);
+  elemToggleFunc(document.body);
+
+});
+
+
+
+/**
+ * skills toggle
+ */
+
+const toggleBtnBox = document.querySelector("[data-toggle-box]");
+const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+const skillsBox = document.querySelector("[data-skills-box]");
+
+for (let i = 0; i < toggleBtns.length; i++) {
+  toggleBtns[i].addEventListener("click", function () {
+
+    elemToggleFunc(toggleBtnBox);
+    for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
+    elemToggleFunc(skillsBox);
+
+  });
 }
 
-// Add an event listener to the theme toggle button
-const themeToggle = document.getElementById('theme-toggle');
-if (themeToggle) {
-  themeToggle.addEventListener('click', toggleDarkTheme);
+
+
+/**
+ * dark & light theme toggle
+ */
+
+const themeToggleBtn = document.querySelector("[data-theme-btn]");
+
+themeToggleBtn.addEventListener("click", function () {
+
+  elemToggleFunc(themeToggleBtn);
+
+  if (themeToggleBtn.classList.contains("active")) {
+    document.body.classList.remove("dark_theme");
+    document.body.classList.add("light_theme");
+
+    localStorage.setItem("theme", "light_theme");
+  } else {
+    document.body.classList.add("dark_theme");
+    document.body.classList.remove("light_theme");
+
+    localStorage.setItem("theme", "dark_theme");
+  }
+
+});
+
+/**
+ * check & apply last time selected theme from localStorage
+ */
+
+if (localStorage.getItem("theme") === "light_theme") {
+  themeToggleBtn.classList.add("active");
+  document.body.classList.remove("dark_theme");
+  document.body.classList.add("light_theme");
+} else {
+  themeToggleBtn.classList.remove("active");
+  document.body.classList.remove("light_theme");
+  document.body.classList.add("dark_theme");
 }
-
-const checkbox = document.getElementById("theme-toggle")
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
-})
-
-document.getElementById('toggleButton').addEventListener('click', function () {
-  const sidebar = document.querySelector('.sidebar');
-  if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-      sidebar.style.display = 'block';
-  } else {
-      sidebar.style.display = 'none';
-  }
-});
-document.querySelector('.menu-toggle').addEventListener('click', function () {
-  const sidebar = document.querySelector('.sidebar');
-  if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-      sidebar.style.display = 'block';
-  } else {
-      sidebar.style.display = 'none';
-  }
-});
-document.querySelector('.sidebar-toggle').addEventListener('click', function () {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.style.display = 'none';
-});
-
-const themeToggle = document.getElementById("theme-toggle");
-themeToggle.addEventListener("change", function () {
-  document.body.classList.toggle("dark-theme");
-});
