@@ -770,10 +770,10 @@ main { overflow-x: hidden; }
   background: var(--color-primary);
   color: var(--bg-primary);
   width: 35px;
-  height: 35px;
+  height: 32px;
   display: grid;
   place-items: center;
-  border-radius: 50%;
+  border-radius: 25px;
   transition: var(--transition-1);
 }
 
