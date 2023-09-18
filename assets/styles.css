@@ -873,6 +873,16 @@ textarea.input-field {
     margin-bottom: 10px;
     max-width: 550px;
   }
+
+  .blog-row{
+    flex-direction: column;
+  }
+  .left-blog-section{
+    width: 100%;
+  }
+  .right-blog-section{
+    width: 100%;
+  }
   /**
    * PROJECT
    */
@@ -922,7 +932,15 @@ textarea.input-field {
 
   .about .btn-secondary { margin-bottom: 0; }
 
-
+  .blog-row{
+    flex-direction: column;
+  }
+  .left-blog-section{
+    width: 100%;
+  }
+  .right-blog-section{
+    width: 100%;
+  }
 
   /**
    * CONTACT
@@ -1144,8 +1162,15 @@ textarea.input-field {
 
   .about-banner { margin-bottom: 0; }
 
-
-
+  .blog-row{
+    flex-direction: column;
+  }
+  .left-blog-section{
+    width: 100%;
+  }
+  .right-blog-section{
+    width: 100%;
+  }
 
   /**
    * SKILLS
@@ -1271,9 +1296,13 @@ textarea.input-field {
   width: 0;
   outline: none;
   border: none;
+  color: --color-primary;
   font-weight: 500;
   transition: 0.5s;
   background: var(--input-bg);
+}
+.inputsearch{
+  color: --color-primary;
 }
 .box a .search{
   color: darkorange;
