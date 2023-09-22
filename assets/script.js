@@ -103,28 +103,3 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
-
-$(document).ready(function() {
-  $('#search-input').keyup(function() {
-    var keyword = $(this).val().trim();
-    if (keyword.length >= 2) {  // Minimum characters to trigger a search
-      $.ajax({
-        url: 'assets/search.php',
-        type: 'POST',
-        data: { keyword: keyword },
-        success: function(response) {
-          $('#search-results').html(response);
-          // Attach click event to search result links
-          $('#search-results a').click(function(e) {
-            e.preventDefault(); // Prevent the link from navigating
-            var blogLink = $(this).attr('href');
-            window.location.href = blogLink; // Navigate to the blog post
-          });
-        }
-      });
-    } else {
-        $('#search-results').empty();
-    }
-  });
-});
-
