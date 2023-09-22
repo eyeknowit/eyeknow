@@ -619,6 +619,10 @@ textarea.input-field {
   transform: translateY(0);
 }
 /*MEDIA QUERIES*/
+/*responsive for smaller screens than 550px*/
+@media (max-width: 550px) {
+  .box{width: 250px;}
+}
 /*responsive for larger than 550px screen*/
 @media (min-width: 550px) {
   /*REUSED STYLE*/
@@ -631,7 +635,7 @@ textarea.input-field {
     max-width: 550px;
     margin-inline: auto;
   }
-  .box{width: 250px;}
+  .box{width: 280px;}
   .hero-banner{
     margin-top: auto;
     margin-bottom: 10px;
