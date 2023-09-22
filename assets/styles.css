@@ -622,6 +622,7 @@ textarea.input-field {
 /*responsive for smaller screens than 550px*/
 @media (max-width: 550px) {
   .box{width: 250px;}
+  .search-row{height: 120px;}
 }
 /*responsive for larger than 550px screen*/
 @media (min-width: 550px) {
@@ -634,6 +635,7 @@ textarea.input-field {
   .search-row{
     max-width: 550px;
     margin-inline: auto;
+    height: 140px;
   }
   .box{width: 280px;}
   .hero-banner{
@@ -662,7 +664,10 @@ textarea.input-field {
 @media (min-width: 768px) {
   /*REUSED STYLE*/
   .container { max-width: 720px; }
-  .search-row { max-width: 720px; }
+  .search-row { 
+    max-width: 720px;
+    height: 160px;
+  }
   .box{width: 280px;}
   .section-title { max-width: 430px; }
   .hero-banner{
@@ -704,7 +709,9 @@ textarea.input-field {
   }
   /*REUSED STYLE*/
   .container { max-width: 980px; }
-  .search-row { max-width: 980px; }
+  .search-row { max-width: 980px;
+    height: 180px;
+  }
   .box{width: 320px;}
   .section-content {
     position: relative;
