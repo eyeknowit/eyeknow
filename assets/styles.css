@@ -327,7 +327,10 @@ body.active { overflow: hidden; }
 }
 .navbar-link:is(:hover, :focus)::before { width: 100%; }
 /*HERO*/
-main { overflow-x: hidden; }
+main { 
+  overflow-x: hidden;
+  padding-top: 80px;
+}
 .hero {
   min-height: 100vh;
   display: flex;
@@ -946,7 +949,7 @@ textarea.input-field {
   height: 18px;
 }
 .main-logo{
-  width: fit-content;
+  width: 80px;
 }
 .activated{
   background-color: darkorange;
