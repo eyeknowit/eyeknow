@@ -631,6 +631,9 @@ textarea.input-field {
   .scroll-down {
     display: none;
   }
+  .main-logo{
+    display: none;
+  }
 }
 /*responsive for larger than 550px screen*/
 @media (min-width: 550px) {
@@ -663,6 +666,10 @@ textarea.input-field {
   }
 
   .scroll-down {
+    display: none;
+  }
+
+  .main-logo{
     display: none;
   }
 
@@ -712,6 +719,9 @@ textarea.input-field {
   }
 
   .scroll-down {
+    display: none;
+  }
+  .main-logo{
     display: none;
   }
 
@@ -832,6 +842,9 @@ textarea.input-field {
     --trans-x: 0;
     opacity: 1;
   }
+  .main-logo{
+    width: 100px;
+  }
   .scroll-down {
     display: block;
     position: absolute;
@@ -906,6 +919,9 @@ textarea.input-field {
   }
   /*ABOUT*/
   .about-banner { max-width: 450px; }
+  .main-logo{
+    width: 120px;
+  }
 }
 /*New elements*/
 .search-row{
