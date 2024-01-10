@@ -345,7 +345,15 @@ main {
   width: 100%;
 }
 :is(.hero-social-list, .scroll-down) { display: none; }
-.hero-content { max-width: 450px; }
+.hero-content { 
+  max-width: 450px; 
+  --color-primary: var(--white);
+  position: absolute;
+  /*top: 70%;
+  right: 35%;*/
+  filter: drop-shadow(2px 4px 10px var(--black));
+
+}
 .hero-title {
   text-align: center;
   margin-bottom: 30px;
@@ -721,10 +729,6 @@ textarea.input-field {
   object-fit: contain;
   object-position: center;
 }
-.blog-section{
-  display: flex;
-  flex-direction: column;
-}
 .video{
   border-radius: 25px;
   margin-bottom: 50px;
@@ -746,6 +750,13 @@ textarea.input-field {
   .main-logo{ width: 220px;}
   .scroll-down {
     display: none;
+  }
+  .hero-content {
+    --color-primary: var(--white);
+    position: absolute;
+    top: 85%;
+    right: 05%;
+    filter: drop-shadow(2px 4px 10px var(--black));
   }
   .blog-row{
     display: flex;
@@ -777,6 +788,13 @@ textarea.input-field {
     margin-top: auto;
     margin-bottom: 10px;
     max-width: 550px;
+  }
+  .hero-content {
+    --color-primary: var(--white);
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    filter: drop-shadow(2px 4px 10px var(--black));
   }
   .about-banner{
     max-width: 450px;
@@ -828,6 +846,13 @@ textarea.input-field {
   .section-title { max-width: 430px; }
   .hero-banner{
     max-width: 720px;
+  }
+  .hero-content {
+    --color-primary: var(--white);
+    position: absolute;
+    top: 95%;
+    right: 23%;
+    filter: drop-shadow(2px 4px 10px var(--black));
   }
   /*ABOUT*/
   .btn-group {
@@ -951,7 +976,7 @@ textarea.input-field {
     --color-primary: var(--white);
     position: absolute;
     top: 70%;
-    right: 35%;
+    right: 30%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
   .hero .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
@@ -1069,6 +1094,13 @@ textarea.input-field {
     .container { max-width: 1150px; }
     .search-row { max-width: 1150px; }
     .main-logo{width: 300px;}
+    .hero-content {
+      --color-primary: var(--white);
+      position: absolute;
+      top: 70%;
+      right: 32%;
+      filter: drop-shadow(2px 4px 10px var(--black));
+    }
     .box{width: 400px;}
     .section-title { max-width: 460px; }
     /*ABOUT*/
