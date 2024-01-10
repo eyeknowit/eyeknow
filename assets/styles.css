@@ -336,7 +336,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  margin-bottom: var(--section-padding);
+  margin-bottom: 120px;
   border-radius: 25px;
 }
 .hero-banner {
@@ -760,7 +760,7 @@ textarea.input-field {
   .hero-content {
     --color-primary: var(--white);
     position: absolute;
-    top: 60%;
+    top: 58%;
     right: 05%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
