@@ -331,12 +331,11 @@ main {
   overflow-x: hidden;
 }
 .hero {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 115px;
+  padding-top: 100px;
   margin-bottom: var(--section-padding);
   border-radius: 25px;
 }
@@ -751,10 +750,13 @@ textarea.input-field {
   .scroll-down {
     display: none;
   }
+  .hero{
+    padding-bottom: 20px;
+  }
   .hero-content {
     --color-primary: var(--white);
     position: absolute;
-    top: 85%;
+    top: 60%;
     right: 05%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
@@ -786,14 +788,14 @@ textarea.input-field {
   .box{width: 280px;}
   .hero-banner{
     margin-top: auto;
-    margin-bottom: 10px;
+   
     max-width: 550px;
   }
   .hero-content {
     --color-primary: var(--white);
     position: absolute;
-    top: 90%;
-    right: 10%;
+    top: 65%;
+    right: 20%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
   .about-banner{
@@ -846,12 +848,13 @@ textarea.input-field {
   .section-title { max-width: 430px; }
   .hero-banner{
     max-width: 720px;
+    
   }
   .hero-content {
     --color-primary: var(--white);
     position: absolute;
-    top: 95%;
-    right: 23%;
+    top: 55%;
+    right: 25%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
   /*ABOUT*/
@@ -960,12 +963,12 @@ textarea.input-field {
   /*HERO*/
   .hero {
     padding-top: 100px;
-    height: 100vh;
+    
   }
   .hero-banner {
     max-width: unset;
     height: 100%;
-    margin-bottom: 0;
+    
   }
   .hero img {
     height: 100%;
@@ -980,40 +983,7 @@ textarea.input-field {
     filter: drop-shadow(2px 4px 10px var(--black));
   }
   .hero .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
-  .hero-social-list {
-    display: block;
-    position: absolute;
-    bottom: 92px;
-    left: -30px;
-  }
-  .hero-social-list::after {
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    left: 13px;
-    width: 2px;
-    height: 30px;
-    background: var(--color-secondary);
-  }
-  .hero-social-link {
-    position: relative;
-    color: var(--color-secondary);
-    margin-block: 5px;
-    padding: 5px;
-    font-size: 18px;
-    transition: var(--transition-1);
-  }
-  .hero-social-link:is(:hover, :focus) { color: var(--color-primary); }
-  .hero-social-link .tooltip {
-    --trans-x: 10px;
-    left: calc(100% + 10px);
-    top: 50%;
-    transform: translateY(-50%) translateX(var(--trans-x));
-  }
-  .hero-social-link:is(:hover, :focus) .tooltip {
-    --trans-x: 0;
-    opacity: 1;
-  }
+  
   .scroll-down {
     display: block;
     position: absolute;
