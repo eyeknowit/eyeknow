@@ -736,10 +736,14 @@ textarea.input-field {
   height: auto;
 }
 .image{
-  width: 430px;
   margin-bottom: 50px;
-  margin-inline: auto;
   height: auto;
+}
+.ahref{
+  display: inline-block;
+  color: var(--raw-seinna);
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /*MEDIA QUERIES*/
 /*responsive to screens smaller than 550px*/
@@ -807,7 +811,7 @@ textarea.input-field {
   }
   /*Image*/
   .image{
-    max-width: 450px;
+    max-width: 480px;
   }
   .blog-row{
     display: flex;
@@ -873,7 +877,7 @@ textarea.input-field {
   }
   /*Image*/
   .image{
-    max-width: 480px;
+    max-width: 500px;
   }
   .about .btn { max-width: max-content; }
   .about .btn-secondary { margin-bottom: 0; }
@@ -1021,7 +1025,7 @@ textarea.input-field {
   }
   /*Image*/
   .image{
-    max-width: 500px;
+    max-width: 550px;
   }
   /*PROJECT*/
   .project-list { column-count: 3; }
@@ -1081,7 +1085,7 @@ textarea.input-field {
     }
     /*Image*/
     .image{
-      max-width: 550px;
+      max-width: 680px;
     }
 
 
