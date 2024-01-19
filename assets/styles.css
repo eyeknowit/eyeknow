@@ -758,8 +758,8 @@ textarea.input-field {
   .hero-content {
     --color-primary: var(--white);
     position: absolute;
-    top: 61%;
-    right: 06%;
+    top: 65%;
+    right: 07%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
   .blog-row{
