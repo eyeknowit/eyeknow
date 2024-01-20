@@ -796,7 +796,7 @@ textarea.input-field {
   .hero-content {
     --color-primary: var(--white);
     position: absolute;
-    top: 68%;
+    top: 65%;
     right: 20%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
