@@ -1,7 +1,7 @@
 /*CUSTOM PROPERTY*/
 :root {
   /*colors*/
-  --raw-seinna: rgb(227, 132, 69);
+  --raw-seinna: #e38445;
   --sizzling-sunrise: hsl(51, 95%, 54%);
   --scarlet: hsl(13, 96%, 47%);
   --black: hsl(0, 0%, 0%);
@@ -730,7 +730,8 @@ textarea.input-field {
   height: auto;
 }
 .image{
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   height: auto;
 }
 .ahref{
@@ -772,6 +773,11 @@ textarea.input-field {
   .right-blog-section {
     display: none;
   }
+  .borderr{
+    border-radius: 25px;
+    height: 225px;
+    width: 400px;
+  }
 }
 /*responsive to screens larger than 550px and smaller than 768px*/
 @media screen and (min-width: 550px) {
@@ -796,7 +802,7 @@ textarea.input-field {
   .hero-content {
     --color-primary: var(--white);
     position: absolute;
-    top: 65%;
+    top: 68%;
     right: 20%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
@@ -833,6 +839,11 @@ textarea.input-field {
   }
   .project-list > li:first-child { column-span: all; }
 
+  .borderr{
+    border-radius: 25px;
+    height: 280px;
+    width: 500px;
+  }
 }
 /*responsive to screens larger than 768px and smaller than 992px*/
 @media screen and (min-width: 768px) {
@@ -898,6 +909,11 @@ textarea.input-field {
   }
   .right-blog-section {
     width: 30%;
+  }
+  .borderr{
+    border-radius: 25px;
+    height: 310px;
+    width: 550px;
   }
 }
 /*responsive to screens larger than 992px and smaller than 1200px*/
@@ -1056,6 +1072,11 @@ textarea.input-field {
   .right-blog-section {
     width: 30%;
   }
+  .borderr{
+    border-radius: 25px;
+    height: 360px;
+    width: 650px;
+  }
 }
 /*responsive to screens larger than 1200px*/
 @media screen and (min-width: 1200px) {
@@ -1092,5 +1113,10 @@ textarea.input-field {
   }
   .right-blog-section {
     width: 30%;
+  }
+  .borderr{
+    border-radius: 25px;
+    height: 380px;
+    width: 700px;
   }
 }
