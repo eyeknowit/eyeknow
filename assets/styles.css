@@ -345,24 +345,44 @@ main {
   margin-bottom: 120px;
   border-radius: 25px;
 }
-.histbanner {
-  max-width: 500px;
-  width: 100%;
+.histhero {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-12);
+  box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
 }
-.hist-content { 
-  max-width: 450px; 
-  --color-primary: var(--white);
+.histhero::after {
+  content: "";
   position: absolute;
-  /*top: 70%;
-  right: 35%;*/
-  filter: drop-shadow(2px 4px 10px var(--black));
+  inset: 0;
+  border-radius: inherit;
+  transition: var(--transition-1);
+}
+.histhero:is(:hover, :focus)::after {
+  background: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(0.5px);
+}
+.histhero .hist-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+.hist-title, hist-lead{
+  margin-bottom: 10px;
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  width: max-content;
+  box-shadow: var(--shadow-1);
+}
+.histhero  { margin-bottom: 10px; }
 
+.histhero, .hist-lead {
+  font-size: var(--fs-6);
+  color: var(--color-primary);
 }
-.hist-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.histhero .btn-primary { margin-inline: auto; }
+
 /*about*/
 .about { 
   padding-block: var(--section-padding);
