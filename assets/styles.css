@@ -336,7 +336,7 @@ body.active { overflow: hidden; }
 main { 
   overflow-x: hidden;
 }
-.hero {
+.histhero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -345,12 +345,11 @@ main {
   margin-bottom: 120px;
   border-radius: 25px;
 }
-.hero-banner {
+.histbanner {
   max-width: 500px;
   width: 100%;
 }
-:is(.hero-social-list, .scroll-down) { display: none; }
-.hero-content { 
+.hist-content { 
   max-width: 450px; 
   --color-primary: var(--white);
   position: absolute;
@@ -359,11 +358,11 @@ main {
   filter: drop-shadow(2px 4px 10px var(--black));
 
 }
-.hero-title {
+.hist-title {
   text-align: center;
   margin-bottom: 30px;
 }
-.hero .btn-primary { margin-inline: auto; }
+.histhero .btn-primary { margin-inline: auto; }
 /*about*/
 .about { 
   padding-block: var(--section-padding);
